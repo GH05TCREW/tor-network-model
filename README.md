@@ -128,12 +128,12 @@ The toolkit design:
 ```
 ┌──────────────────┐     ┌─────────────────────┐     ┌──────────────────┐
 │  Configuration   │──►  │  Simulation Engine  │──►  │   Results & UI   │
-│(network spec,    │     │ (event-driven or    │     │ (plots, tables,   │
-│ adversary model, │     │  Monte Carlo loops) │     │  export)          │
+│(network spec,    │     │ (event-driven or    │     │ (plots, tables,  │
+│ adversary model, │     │  Monte Carlo loops) │     │  export)         │
 │  padding policy) │     └─────────────────────┘     └──────────────────┘
 └──────────────────┘
-        ▲                                      ▲
-        │                                      │
+        ▲                                     ▲
+        │                                     │
         └─────────────── Data Loader ─────────┘
                       (real Tor consensus
                      or synthetic graph)
